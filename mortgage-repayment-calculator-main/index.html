@@ -17,29 +17,34 @@
 
       <div class="left_side">
         <div class="section1">
-          <h3>Mortgage Calculator</h3>
-          <p>Clear All</p>
+          <h3><b>Mortgage Calculator</b></h3>
+          <p class="clear">Clear All</p>
         </div>
 
         <div class="section2">
-          <form action="#">
-            <label for="amount" class="title1">Mortgage Amount</label>
-            <input type="text" label="Amount" class="text_box" placeholder="&#8364;">
+            <div class="form_item">
+              <p class="ilabel">Mortgage Amount</p>
+              <input type="text" label="Amount" class="text_box" placeholder="&#8364;">
+            </div>
 
-            <label for="term" class="title1">Mortgage Term</label>
-            <input type="text" label="Amount" class="text_box" placeholder="years">
+            <div class="form_item">
+              <p class="ilabel">Mortgage Termt</p>
+              <input type="text" label="Years" class="text_box" placeholder="years">
+            </div>
 
-            <label for="rate" class="title1">Interest Rate</label>
-            <input type="text" label="Amount" class="text_box" placeholder="&#37;">
+            <div class="form_item"></div>
+              <p class="ilabel">Interest Rate</p>
+              <input type="text" label="Rate" class="text_box" placeholder="&#37;">
+            </div>
 
             <div class="mor_type">
               <p class="title2">Mortgage Type</p>
               <input type="radio" name="type" class="r1" value="Repayment">
-              <label for="repayment">Repayment</label>
+              <label for="repayment">Repayment</label><br>
               <input type="radio" name="type" class="r1" value="Interest Only">
-              <label for="interest">Interest Only</label>
+              <label for="interest">Interest Only</label><br>
             </div>
-        </div>
+      </div>
 
         <div class="section3">
           <button class="calculation">
@@ -53,7 +58,7 @@
         <div class="context">
           <img src="assets/images/illustration-empty.svg" alt="" class="pic">
           <h2>Results shown here</h2>
-          <p>Complete the form and click “calculate repayments” to see what 
+          <p class="btext">Complete the form and click “calculate repayments” to see what 
             your monthly repayments would be.</p>
         </div>
       </div>
