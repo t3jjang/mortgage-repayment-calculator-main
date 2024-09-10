@@ -11,61 +11,77 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <div class="frame">
     <div class="outer_box">
-
       <div class="left_side">
         <div class="section1">
           <h3><b>Mortgage Calculator</b></h3>
           <p class="clear">Clear All</p>
         </div>
-
         <div class="section2">
-            <div class="form_item">
-              <p class="ilabel">Mortgage Amount</p>
-              <input type="text" label="Amount" class="text_box" placeholder="&#8364;">
+          <div class="item">
+            <p class="label_">Mortgage Amount</p>
+            <div class="text_field">
+              <button class="plac"><b>&#8364;</b></button>
+              <input type="text" class="text_box">
+            </div>
+          </div>
+          <div class="item_box">
+            <div class="item">
+              <p class="label_">Mortgage Term</p>
+              <div class="text_field_1">
+                <input type="text" class="text_box_1">
+                <button class="plac_1"><b>years</b></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="label_">Interest Rate</p>
+              <div class="text_field_1">
+                <input type="text" class="text_box_1">
+                <button class="plac_1"><b>&#37;</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="type">
+            <p class="title2">Mortgage Type</p>
+
+            <div class="rdo">
+              <input type="radio" name="mtype" class="rd" value="Repayment">
+              <label for="repayment" class="lname"><b>Repayment</b></label><br>
             </div>
 
-            <div class="form_item">
-              <p class="ilabel">Mortgage Termt</p>
-              <input type="text" label="Years" class="text_box" placeholder="years">
+            <div class="rdo">
+              <input type="radio" name="mtype" class="rd" value="Interest Only">
+              <label for="interest" class="lname"><b>Interest Only</b></label><br>
             </div>
-
-            <div class="form_item"></div>
-              <p class="ilabel">Interest Rate</p>
-              <input type="text" label="Rate" class="text_box" placeholder="&#37;">
-            </div>
-
-            <div class="mor_type">
-              <p class="title2">Mortgage Type</p>
-              <input type="radio" name="type" class="r1" value="Repayment">
-              <label for="repayment">Repayment</label><br>
-              <input type="radio" name="type" class="r1" value="Interest Only">
-              <label for="interest">Interest Only</label><br>
-            </div>
-      </div>
-
+          </div>
+        </div>
         <div class="section3">
-          <button class="calculation">
-            <img src="" alt="">
-            <b>Calculate Repayments</b>
+          <button class="calculator">
+            <img src="assets/images/icon-calculator.svg" alt="Logo" class="logo">
+            <p class="btitle"><b>Calculate Repayments</b></p>
           </button>
         </div>
       </div>
 
       <div class="right_side">
         <div class="context">
-          <img src="assets/images/illustration-empty.svg" alt="" class="pic">
+          <img src="assets/images/illustration-empty.svg" alt="Calculator" class="pic">
           <h2>Results shown here</h2>
-          <p class="btext">Complete the form and click “calculate repayments” to see what 
-            your monthly repayments would be.</p>
+          <p class="btext">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
         </div>
       </div>
-
     </div>
   </div>
-  <!-- 
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
 
   Your results
 
@@ -77,7 +93,3 @@
   Total you'll repay over the term
 
   -->
-  
-  <script src="script.js"></script>
-</body>
-</html>
